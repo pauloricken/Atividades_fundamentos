@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Viagem </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Viagem</h1>
+    <div class="formulario">
+        <label for="nomeViagem">Nome da Viagem/destino:</label>
+        <input type="text" id="nomeViagem">
+        <br>
+        <label for="kmPercorridos">Km Percorridos:</label>
+        <input type="number" id="kmPercorridos">
+        <br>
+        <label for="litrosCombustivel">quantidade de litros Gastos:</label>
+        <input type="number" id="litrosCombustivel">
+        <br>
+        <label for="valorLitro">Valor pago no litro (R$):</label>
+        <input type="number" id="valorLitro">
+        <br>
+        <button onclick="calcularViagem()">Calcular</button>
+    </div>
+    <div id="resultado">
+        <h2>Resultado da sua viagem :</h2>
+        <p><strong>Nome da Viagem:</strong> <span id="resultado-nomeViagem"></span></p>
+        <p><strong>Autonomia (Km/L):</strong> <span id="resultado-autonomia"></span></p>
+        <p><strong>Valor da Viagem (R$):</strong> <span id="resultado-valorViagem"></span></p>
+        <p><strong>Valor por Km (R$):</strong> <span id="resultado-valorPorKm"></span></p>
+    </div>
+    <script src="calc_viagem.js"></script>  
+    <a href="file:///C:/Users/campe/OneDrive/Documentos/atividades_sandro_fudamentos/">Voltar ao diretorio principal</a>
+</body>
+</html>
